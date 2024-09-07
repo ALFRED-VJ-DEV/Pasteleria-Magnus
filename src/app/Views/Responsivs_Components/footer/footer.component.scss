@@ -1,0 +1,35 @@
+/* Estilo general del footer */
+.footer {
+  background: #212121; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  padding: 20px 10px; /* Espaciado interior */
+  text-align: center; /* Centra el contenido */
+}
+
+/* Contenedor de los elementos del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Muestra los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilo para cada item del footer */
+.footer-item {
+  margin-bottom: 15px; /* Espaciado entre los items */
+  display: flex;
+  align-items: center; /* Centra el icono y el texto verticalmente */
+  justify-content: center; /* Centra el icono y el texto horizontalmente */
+}
+
+/* Estilo para los íconos del footer */
+.footer-icon {
+  width: 24px; /* Ajusta el tamaño del ícono */
+  height: 24px; /* Ajusta el tamaño del ícono */
+  margin-right: 8px; /* Espaciado entre el ícono y el texto */
+}
+
+/* Estilo para el texto del footer */
+.footer-text {
+  font-size: 16px; /* Tamaño del texto */
+  margin-left: 20px;
+}
