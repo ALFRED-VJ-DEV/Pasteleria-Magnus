@@ -1,0 +1,33 @@
+/* Estilos generales para todos los dispositivos */
+app-navbar, app-home, app-boton-acer-pedido {
+  display: block; /* Por defecto, todos los componentes están visibles */
+}
+.mobile-layout {
+  display: none; /* Muestra el contenedor específico para móviles */
+}
+/* Ocultar componentes en dispositivos móviles */
+@media (max-width: 767px) {
+  app-navbar {
+    display: none; /* Oculta el componente navbar en pantallas pequeñas */
+  }
+
+  app-home {
+    display: none; /* Oculta el componente home en pantallas pequeñas */
+  }
+
+  app-boton-acer-pedido {
+    display: none; /* Oculta el componente boton-acer-pedido en pantallas pequeñas */
+  }
+
+  .mobile-layout {
+    display: block; /* Muestra el contenedor específico para móviles */
+  }
+
+  .mobile-menu {
+    display: block; /* Muestra el menú móvil */
+  }
+
+  .desktop-layout {
+    display: none; /* Oculta el diseño de escritorio */
+  }
+}

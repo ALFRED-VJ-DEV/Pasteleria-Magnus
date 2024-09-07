@@ -12,7 +12,8 @@
     "delete:docs": "del docs",
     "copy:txt": "copyfiles dist/pasteleria-magnus/*.txt ./docs -f",
     "copy:br": "copyfiles dist/pasteleria-magnus/browser/* ./docs -f",
-    "b": "npm run b:h && npm run delete:docs && npm run copy:br && npm run copy:txt"
+    "copy:media": "copyfiles dist/pasteleria-magnus/browser/media/**/* ./docs/media -f",
+    "b": "npm run b:h && npm run delete:docs && npm run copy:br && npm run copy:txt && npm run copy:media"
   },
   "private": true,
   "dependencies": {
