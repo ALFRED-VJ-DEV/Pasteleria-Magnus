@@ -1,0 +1,37 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 600px; /* Ajusta la altura del contenedor principal según sea necesario */
+}
+
+/* Contenedores laterales */
+.side {
+  flex: 0 0 15%; /* Establece un ancho fijo del 15% para los contenedores laterales */
+  display: flex;
+  align-items: center; /* Centra la imagen verticalmente dentro del contenedor lateral */
+  justify-content: center; /* Centra la imagen horizontalmente dentro del contenedor lateral */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  height: 90%; /* Ocupa toda la altura del contenedor principal */
+  margin: 30px 10px 0 10px; /* Añade un margen de 10px a la izquierda y derecha para separarlas de las orillas */
+}
+
+/* Imagen lateral izquierda */
+.side.left {
+  background-image: url('../../../assets/izq.jpg'); /* Ruta a la imagen lateral izquierda */
+}
+
+/* Imagen lateral derecha */
+.side.right {
+  background-image: url('../../../assets/der.jpg'); /* Ruta a la imagen lateral derecha */
+}
+
+/* Contenedor central */
+.image-container {
+  flex: 1; /* Ocupa el espacio restante del contenedor principal */
+  background-image: url('../../../assets/pastelcentral.jpg');
+  background-size: contain; /* Ajusta la imagen para que se ajuste completamente dentro del contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100%; /* Ocupa toda la altura del contenedor principal */
+}
