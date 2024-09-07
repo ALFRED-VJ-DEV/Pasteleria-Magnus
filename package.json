@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "b:h": "ng build --base-href ./",
+    "serve:ssr:pasteleria-magnus": "node dist/pasteleria-magnus/server/server.mjs",
+    "delete:docs": "del docs",
+    "copy:txt": "copyfiles dist/pasteleria-magnus/*.txt ./docs -f",
+    "copy:br": "copyfiles dist/pasteleria-magnus/browser/* ./docs -f",
+    "b": "npm run b:h && npm run delete:docs && npm run copy:br && npm run copy:txt"
   },
   "private": true,
   "dependencies": {
@@ -15,9 +21,11 @@
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
+    "@angular/material": "^18.2.3",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
+    "copyfiles": "^2.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"

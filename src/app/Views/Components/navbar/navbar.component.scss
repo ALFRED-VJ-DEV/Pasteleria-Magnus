@@ -1,0 +1,76 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  color: #151515;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nombre-pasteleria {
+  width: 15%;
+  text-align: left;
+}
+
+.titulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+.opciones {
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+.opciones a {
+  text-decoration: none;
+  color: #151515;
+  font-weight: bold;
+}
+
+.contacto {
+  width: 30%;
+  display: flex;
+}
+
+.icon{
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .opciones {
+    display: none;
+  }
+
+  .contacto {
+    width: 50%;
+  }
+}
+
+.fa-phone{
+  color: green;
+}
+.fa-envelope{
+  color: rgb(255, 0, 81)
+}
+.btn_contact{
+  cursor: pointer;
+  margin-left: 10px;
+}
