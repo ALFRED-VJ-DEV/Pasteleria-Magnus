@@ -11,5 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  email:string = "pasteleria.magnus@gmail.com";
 
 }

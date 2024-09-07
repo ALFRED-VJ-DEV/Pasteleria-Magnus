@@ -9,5 +9,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+email:string = "pasteleria.magnus@gmail.com";
 }
