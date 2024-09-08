@@ -1,10 +1,19 @@
 <div class="mobile-menu">
   <div class="content">
-   <div  class="icon-arrow-left"><mat-icon>chevron_left</mat-icon></div>
-    <div class="menu-content">
+   <div  class="icon-arrow-left"><mat-icon (click)="changeShowMenuBefore()">chevron_left</mat-icon></div>
+    <div *ngIf="showNameBakery" class="menu-content">
       <p class="menu-title">MAGNUS</p>
       <p>El Mejor Sabor</p>
     </div>
-    <div  class="icon-arrow-rigth"><mat-icon>chevron_right</mat-icon></div>
+    <div *ngIf="showFlavors" class="menu-content">
+      <p class="menu-title">SABORES</p>
+    </div>
+    <div *ngIf="showPrices" class="menu-content">
+      <p class="menu-title">PRECIOS</p>
+    </div>
+    <div *ngIf="showOrder" class="menu-content">
+      <p class="menu-title">ORDENAR</p>
+    </div>
+    <div  class="icon-arrow-rigth"><mat-icon (click)="changeShowMenuNext() ">chevron_right</mat-icon></div>
   </div>
 </div>
