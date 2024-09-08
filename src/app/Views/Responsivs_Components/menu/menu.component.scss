@@ -17,13 +17,24 @@
   /* Para asegurar que el contenido no se desborde */
   box-sizing: border-box;
 }
-
+.content{
+  display: flex;
+  justify-content: space-around;
+}
 /* Contenido del menú */
 .menu-content {
   text-align: center;
   font-family: 'Dancing Script', cursive;
 }
 
+.icon-arrow-left{
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.icon-arrow-rigth{
+  margin-top: 50px;
+  margin-left: 50px;
+}
 /* Título del menú */
 .menu-title {
   font-size: 24px;
