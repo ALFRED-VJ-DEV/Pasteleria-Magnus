@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
+.contendor-sabores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Cursive', sans-serif; /* Fuente para hacer las letras más bonitas */
+}
+
+.img-pastel {
+  width: 40%;
+  height: 70vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../../../assets/pastelFresa.png');
+  border-radius: 15px; /* Bordes redondeados para la imagen */
+  // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar la imagen */
+}
+
+.description-cake {
+  width: 60%;
+  padding: 20px;
+}
+
+.cake-title {
+  font-size: 2.5rem;
+  color: #ff69b4; /* Un tono rosa bonito */
+  text-shadow: 2px 2px 4px rgba(192, 4, 255, 0.2);
+  margin-bottom: 15px;
+  font-family: 'Pacifico', cursive; /* Fuente más decorativa para el título */
+}
+
+.cake-description {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+  // text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Nerko One", cursive;
+}
+.icon-arrow-rigth{
+  cursor: pointer;
+}
+.icon-arrow-left{
+  cursor: pointer;
+}
