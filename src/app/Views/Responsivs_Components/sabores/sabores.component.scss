@@ -1,31 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Pacifico&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+
 /* Estilos generales de la tarjeta */
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: 20px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05); /* Efecto al pasar el cursor */
-}
-
-/* Contenedor de la imagen */
-.image-container {
+.carousel-container {
+  position: relative;
   width: 100%;
+  overflow: hidden;  /* Oculta el contenido fuera de la vista */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Suaviza la transición del carrusel */
+}
+
+.card {
+  flex: 0 0 100%; /* Cada tarjeta ocupará todo el ancho del viewport */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.image-container, .image-container-2 {
   height: 200px;
-  background-image: url('../../../assets/pastelFresa.png');
   background-size: cover;
   background-position: center;
+}
+
+.image-container {
+  width: 100%;
+  background-image: url('../../../assets/pastelFresa.png');
+}
+
+.image-container-2 {
+  width: 100%;
+  background-image: url('../../../assets/CestaLujo.png');
 }
 
 /* Contenido de texto dentro de la tarjeta */
@@ -48,13 +60,41 @@ p {
   color: #555;
   margin-top: 10px;
 }
-button{
+
+button {
   padding: 5px 30px;
   background-color: #f200ff;
   color: white;
   border: none;
   margin-bottom: 20px;
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: #ff4500;
+}
+
+/* Estilos para los botones de navegación */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.334);
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
 /* Responsivo: Para pantallas pequeñas */
 @media (max-width: 768px) {
   .card {
