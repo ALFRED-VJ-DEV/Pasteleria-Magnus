@@ -1,3 +1,7 @@
-<div class="content-container">
+<div>
+  <div *ngIf="showNameBakery" class="content-container">
+  </div>
+  <app-sabores *ngIf="showFlavors"></app-sabores>
+  <app-prices *ngIf="showPrices"></app-prices>
+  <app-order *ngIf="showOrder"></app-order>
 </div>
-

@@ -35,3 +35,9 @@
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   height: 100%; /* Ocupa toda la altura del contenedor principal */
 }
+
+@media (max-width: 767px){
+  .container{
+    display: none;
+  }
+}

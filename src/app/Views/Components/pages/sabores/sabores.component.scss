@@ -48,3 +48,9 @@
 .icon-arrow-left{
   cursor: pointer;
 }
+
+@media (max-width: 767px){
+  .contendor-sabores{
+    display: none;
+  }
+}
