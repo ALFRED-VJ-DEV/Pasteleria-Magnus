@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-sabores',
@@ -9,6 +9,16 @@ import { Component } from '@angular/core';
 export class SaboresComponent {
   currentIndex = 0;
   totalSlides = 2; // Número total de tarjetas
+
+  @HostListener('window:swiperight', ['$event'])
+  onSwipeRight(event: any) {
+    this.prevSlide();
+  }
+
+  @HostListener('window:swipeleft', ['$event'])
+  onSwipeLeft(event: any) {
+    this.nextSlide();
+  }
 
   nextSlide() {
     const carousel = document.querySelector('.carousel') as HTMLElement;
