@@ -8,7 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class SaboresComponent {
   currentIndex = 0;
-  totalSlides = 2; // Número total de tarjetas
+  totalSlides = 5; // Número total de tarjetas
 
   @HostListener('window:swiperight', ['$event'])
   onSwipeRight(event: any) {

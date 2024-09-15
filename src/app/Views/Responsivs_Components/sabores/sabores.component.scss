@@ -24,7 +24,11 @@
   box-sizing: border-box;
 }
 
-.image-container, .image-container-2 {
+.image-container,
+.image-container-2,
+.image-container-3,
+.image-container-4,
+.image-container-5 {
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -38,6 +42,21 @@
 .image-container-2 {
   width: 100%;
   background-image: url('../../../assets/CestaLujo.png');
+}
+
+.image-container-3 {
+  width: 100%;
+  background-image: url('../../../assets/FantasiaOreo.png');
+}
+
+.image-container-4 {
+  width: 100%;
+  background-image: url('../../../assets/Pasión_de_Cacao.png');
+}
+
+.image-container-5 {
+  width: 100%;
+  background-image: url('../../../assets/Sueño_de_Oro.png');
 }
 
 /* Contenido de texto dentro de la tarjeta */
