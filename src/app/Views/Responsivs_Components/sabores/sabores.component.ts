@@ -36,7 +36,7 @@ export class SaboresComponent {
     carousel.style.transform = `translateX(-${this.currentIndex * 100}%)`;
   }
 
-  sendMessage(){
-    this.sendWhatsappService.sendMessage();
+  sendMessage(typeCacke: string){
+    this.sendWhatsappService.sendMessage(typeCacke);
   }
 }

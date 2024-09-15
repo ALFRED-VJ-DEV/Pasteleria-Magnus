@@ -5,13 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class SendWhatsappService {
   private phone:string = '+525579947397';
-  private message:string = 'Hola soy tu app'
+  private message:string = 'Hola Puedes darme información de '
 
 
   constructor() { }
 
-  sendMessage(){
-    const encodedMessage = encodeURIComponent(this.message);
+  sendMessage(typeCacke: string){
+    const encodedMessage = encodeURIComponent(this.message + typeCacke);
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${this.phone}&text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   }
