@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { SendWhatsappService } from '../../Services/send-whatsapp.service';
 
 @Component({
   selector: 'app-sabores',
@@ -10,6 +11,9 @@ export class SaboresComponent {
   currentIndex = 0;
   totalSlides = 5; // Número total de tarjetas
 
+  constructor(
+    private sendWhatsappService: SendWhatsappService
+  ){}
   @HostListener('window:swiperight', ['$event'])
   onSwipeRight(event: any) {
     this.prevSlide();
@@ -30,5 +34,9 @@ export class SaboresComponent {
     const carousel = document.querySelector('.carousel') as HTMLElement;
     this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
     carousel.style.transform = `translateX(-${this.currentIndex * 100}%)`;
+  }
+
+  sendMessage(){
+    this.sendWhatsappService.sendMessage();
   }
 }
